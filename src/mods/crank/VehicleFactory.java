@@ -8,7 +8,7 @@ import mods.crank.vehicles.Boat;
 import mods.crank.vehicles.Forklift;
 import mods.crank.vehicles.Tank;
 
-public class VehicleFactory extends AbstractVehicleFactory {
+public class VehicleFactory extends game.VehicleFactory {
     @Override
     public Vehicle createVehicle(Terrain terrain) {
         switch (terrain){
