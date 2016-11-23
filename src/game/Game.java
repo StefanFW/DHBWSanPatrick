@@ -6,29 +6,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
-    private static List<Vehicle> vehicleList = new ArrayList<>();
-    
+    private static AbstractVehicleFactory factory;
     
     public static void main(String[] args) throws GameModNotFoundException {
-        AbstractVehicleFactory factory = VehicleFactoryFactory.createVehicleFactory();
+        factory = VehicleFactoryFactory.createVehicleFactory();
 
-        addToVehicleList(factory.createVehicle(Terrain.ROAD));
-        addToVehicleList(factory.createVehicle(Terrain.OFFROAD));
-        addToVehicleList(factory.createVehicle(Terrain.SKY));
-        addToVehicleList(factory.createVehicle(Terrain.SPACE));
-        addToVehicleList(factory.createVehicle(Terrain.TRANSDIMENSIONAL));
-
-        for(Vehicle vehicle : vehicleList){
-            
-            System.out.println(vehicle.getClass());
-        }
+        createVehicle(Terrain.ROAD);
+        createVehicle(Terrain.OFFROAD);
+        createVehicle(Terrain.SKY);
+        createVehicle(Terrain.SPACE);
+        createVehicle(Terrain.TRANSDIMENSIONAL);
     }
     
-    private static void addToVehicleList(Vehicle vehicle){
+    private static void createVehicle(Terrain terrain) throws GameModNotFoundException {
+        Vehicle vehicle = factory.createVehicle(terrain);
         if(vehicle == null) {
-            return;
+            System.out.println("For the terrain " + terrain.toString() + " is no vehicle available");
+        } else{
+            System.out.println("Vehicle " + vehicle.getName() + " was created in terrain " + terrain.toString());
         }
-        
-        vehicleList.add(vehicle);
     }
 }
