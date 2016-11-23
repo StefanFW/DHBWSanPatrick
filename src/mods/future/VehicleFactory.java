@@ -6,7 +6,7 @@ import mods.future.vehicles.Spaceship;
 import mods.future.vehicles.Tardies;
 import mods.future.vehicles.Zeppelin;
 
-public class VehicleFactory extends mods.crank.VehicleFactory {
+public class VehicleFactory extends game.VehicleFactory {
     @Override
     public Vehicle createVehicle(Terrain terrain){
         switch (terrain){
