@@ -2,8 +2,8 @@ package mods.future.vehicles;
 
 import game.Vehicle;
 
-public class Tardies implements Vehicle {
-    private String name = "Tardies";
+public class Tardis implements Vehicle {
+    private String name = "Tardis";
 
     @Override
     public String getName() {
@@ -12,6 +12,6 @@ public class Tardies implements Vehicle {
 
     @Override
     public void steer() {
-        //TODO: do something mysterial
+        //TODO: even the Doctor doesn't how to do it
     }
 }
