@@ -32,7 +32,35 @@ Our scenario is that we have developed a game in which users are able to create 
 
 You can test it by compiling and running the main method from Game class.
 
-Change mod by editing the mod.properties file.
+**Example Output:**
+
+                   DHBW SanPatrick               
+    
+    |---------------------------------------------|
+    |        Terrain       |        Vehicle       |
+    |---------------------------------------------|
+    | ROAD                 | Car                  |
+    |---------------------------------------------|
+    | OFFROAD              | no vehicle available |
+    |---------------------------------------------|
+    | WATER                | no vehicle available |
+    |---------------------------------------------|
+    | INDUSTRIAL           | no vehicle available |
+    |---------------------------------------------|
+    | SKY                  | no vehicle available |
+    |---------------------------------------------|
+    | SPACE                | no vehicle available |
+    |---------------------------------------------|
+    | UNDERGROUND          | no vehicle available |
+    |---------------------------------------------|
+    | UNDERWATER           | no vehicle available |
+    |---------------------------------------------|
+    | TRANSDIMENSIONAL     | no vehicle available |
+    |---------------------------------------------|
+
+<br>
+
+Change mod by editing the mod.properties file in the properties folder.
 
 <br><br>
 
