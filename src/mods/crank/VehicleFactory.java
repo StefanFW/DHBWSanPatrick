@@ -12,9 +12,6 @@ public class VehicleFactory extends game.VehicleFactory {
     @Override
     public Vehicle createVehicle(Terrain terrain) {
         switch (terrain){
-            case ROAD:
-                return new Car();
-
             case WATER:
                 return new Boat();
 
@@ -25,7 +22,7 @@ public class VehicleFactory extends game.VehicleFactory {
                 return new Forklift();
 
             default:
-                return null;
+                return super.createVehicle(terrain);
         }
     }
 }
