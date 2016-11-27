@@ -1,4 +1,9 @@
-# DHBW SanPatrick
+<br><br>
+
+![logo](logo.png)
+
+<br><br>
+
 This project is an example application to show the Factory Method design pattern (DHBW - Semester 5 - Advanced Software Engineering)
 
 <br><br>
